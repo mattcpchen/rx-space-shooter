@@ -2,8 +2,17 @@
   "name": "espract",
   "version": "1.0.0",
   "description": "Use RxJS to create a simple shooting game",
-  "author": "",
+  "author": "Matt CP Chen",
   "license": "ISC",
+  "main": "dist/server.js",
+  "engines": {
+    "node": "4.3.0",
+    "npm": "2.14.12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mattcpchen/rx-space-shooter.git"
+  },
   "scripts": {
     "dev:webpack": "npm run clean-dist && webpack-dev-server --config ./webpack.client.config.babel.js --progress --colors",
     "dev": "npm run clean-dist && node server",
