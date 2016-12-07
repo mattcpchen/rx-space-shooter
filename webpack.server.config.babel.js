@@ -1,5 +1,4 @@
 import webpack from 'webpack';
-import ProgressBarPlugin from 'progress-bar-webpack-plugin';
 
 
 const config = {
@@ -27,11 +26,8 @@ const config = {
       loader: 'json'
     }]
   },
-  plugins: [
-    new ProgressBarPlugin({ clear: false })
-  ]
+  plugins: []
 };
-
 
 
 
@@ -40,7 +36,12 @@ if (process.env.NODE_ENV === 'production') {
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.optimize.UglifyJsPlugin({comments: false})
   ]);
-};
+} else {
+  const ProgressBarPlugin = require('progress-bar-webpack-plugin');
+  config.plugins = config.plugins.concat([
+    new ProgressBarPlugin({ clear: false })
+  ]);
+}
 
 
 module.exports = config;

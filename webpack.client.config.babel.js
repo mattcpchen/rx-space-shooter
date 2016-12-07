@@ -1,6 +1,5 @@
 import webpack from 'webpack';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
-import ProgressBarPlugin from 'progress-bar-webpack-plugin';
 
 
 const config = {
@@ -32,11 +31,9 @@ const config = {
     inline: true
   },
   plugins: [
-    new ExtractTextPlugin("styles.css"),
-    new ProgressBarPlugin({ clear: false })
+    new ExtractTextPlugin("styles.css")
   ]
 };
-
 
 
 
@@ -49,7 +46,12 @@ if (process.env.NODE_ENV === 'production') {
       'process.env': {NODE_ENV: JSON.stringify('production')}
     })
   ]);
-};
+} else {
+  const ProgressBarPlugin = require('progress-bar-webpack-plugin');
+  config.plugins = config.plugins.concat([
+    new ProgressBarPlugin({ clear: false })
+  ]);
+}
 
 
 module.exports = config;
