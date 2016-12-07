@@ -1,0 +1,20 @@
+export default {
+  introHolder: document.querySelector("#introHolder"),
+  introCtrls: document.querySelector("#introCtrls"),
+  gameHolder: document.querySelector("#gameHolder"),
+  gameCtrls: document.querySelector("#gameCtrls"),
+  title : document.querySelector('#title'),
+  gameBG : document.querySelector('#gameBG'),
+  gameBGImage : document.querySelector('#gameBGImage'),
+  stars : document.querySelector('#stars'),
+  heroShip: document.querySelector('#heroShip'),
+  heroShots: document.querySelector('#heroShots'),
+  enemies: document.querySelector('#enemies'),
+  enemyShots: document.querySelector('#enemyShots'),
+  gameScore: document.querySelector('#gameScore'),
+  gameOver: document.querySelector('#gameOver'),
+  starElms:[],
+  heroShotElms:[],
+  enemyElms:[],
+  enemyShotElms:{}
+};

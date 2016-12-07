@@ -1,0 +1,104 @@
+#gameHolder{
+  width: 100%;
+  height: 500px;
+  position: relative;
+  border: 1px solid #fff;
+  overflow: hidden;
+  display: none;
+
+  #gameBG {
+    position: absolute;
+
+    #gameBGImage {
+      position: relative;
+    }
+  }
+  #stars {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+
+    .star {
+      background-color: #fff;
+      box-shadow: 0px 0px 5px 1px rgba(255,255,255,0.5);
+      position:absolute;
+    }
+  }
+  #heroShip {
+    position: absolute;
+    left: -100px;
+    top: -100px;
+    .ship {
+      position: relative;
+      left: -20px;
+      top: -20px;
+      width: 0;
+      height: 0;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-bottom: 20px solid $heroColor;
+    }
+  }
+  #heroShots {
+    .heroShot {
+      width: 5px;
+      height: 5px;
+      position: absolute;
+      background-color: #da8890;
+      box-shadow: 0px 0px 5px 2px $heroColor;
+    }
+  }
+  #enemies {
+    .enemy {
+      position: absolute;
+      .enemyShape {
+        width: 0;
+        height: 0;
+        left: -20px;
+        position: relative;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid $enemyColor;
+      }
+    }
+  }
+  #enemyShots {
+    .enemyShot {
+      width: 1px;
+      height: 20px;
+      position: absolute;
+      background-color: $enemyColor;
+      box-shadow: 0px 0px 5px 2px $enemyColor;
+    }
+  }
+
+  #gameOver {
+    position:relative;
+    font-size: 80px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 200px;
+    color: rgba(255,255,255, 0.35);
+    display:none;
+  }
+}
+
+
+#gameCtrls{
+  width: 100%;
+  position: relative;
+  margin:0 auto;
+  display: none;
+
+  .restartBtnHolder {
+    position:relative;
+    width: 150px;
+    margin: 30px auto;
+
+    .button {
+      width: 100%;
+      height: 40px;
+    }
+  }
+}

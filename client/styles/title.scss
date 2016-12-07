@@ -1,0 +1,15 @@
+#titleHolder {
+  width: 100%;
+  padding: 35px 0 0;
+  font-size: 30px;
+  font-weight:900;
+  line-hight: 34px;
+
+  #title {
+    margin-left: 10px;
+    text-shadow: 0px 0px 30px #0ab2ff, 0 0 20px $ssBlue, 0 0 10px #06213a;
+    text-align: center;
+  }
+  #gameScore {
+  }
+}

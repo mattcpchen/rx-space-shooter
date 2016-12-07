@@ -1,0 +1,38 @@
+$ssBlue: #085397;
+$enemyColor: #47a216;
+$heroColor: #ff3e51;
+@import 'styles/title';
+@import 'styles/intro';
+@import 'styles/game';
+html, body {
+  color: #fff;
+  background-color: #000;
+  font-family: Helvetica;
+  font-weight: normal;
+  font-size: 16px;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -osx-moz-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.button {
+  color: #fff;
+  background-color: $ssBlue;
+  border: 1px solid #fff;
+  padding: 5px 15px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  cursor: pointer;
+}
+#gameStage {
+  position:relative;
+  width: 700px;
+  margin: 0 auto;
+}

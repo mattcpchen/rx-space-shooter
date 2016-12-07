@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <!-- +++++++++++++++++++++++ -->
+    <div id="gameStage">
+      <div id="titleHolder">
+        <span id="title">sPAcE-sHooTer</span>
+        <span id="gameScore"></span>
+      </div>
+
+      <div id="introHolder">
+        <div class="title">[ INSTRUCTION ]</div>
+        <ul>
+          <li>Click and hold "Next" and "Back" key to move your spaceship.</li>
+          <li>Click on spacebar to shoot fire.</li>
+          <li>Click "START" to start the game.</li>
+        </ul>
+      </div>
+      <div id="introCtrls">
+        <div class="startBtnHolder">
+          <button class="button" id="startBtn">START</button>
+        </div>
+      </div>
+
+      <div id="gameHolder">
+        <div id="gameBG"><img id="gameBGImage"></div>
+        <div id="stars"></div>
+        <div id="heroShots"></div>
+        <div id="heroShip"><div class="ship"></div></div>
+        <div id="enemyShots"></div>
+        <div id="enemies"></div>
+        <div id="gameOver">GAME OVER !!!</div>
+      </div>
+      <div id="gameCtrls">
+        <div class="restartBtnHolder">
+          <button class="button" id="restartBtn">RESTART AGAIN !!!</button>
+        </div>
+      </div>
+    </div>
+    <!-- +++++++++++++++++++++++ -->
+    <script src="/bundle.js"></script>
+  </body>
+</html>
