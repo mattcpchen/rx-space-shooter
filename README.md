@@ -1,7 +1,7 @@
-## Space-Shooter
+## RX-Space-Shooter
 Create a simple space shooter game using HTML5 with RxJS.
 
-![Screenshot_01](/public/images/readme_01.jpg?raw=true)
+![Screenshot_01](/public/assets/readme_01.jpg?raw=true)
 
 https://rx-space-shooter.herokuapp.com/
 
